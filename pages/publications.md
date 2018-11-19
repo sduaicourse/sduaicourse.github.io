@@ -1,6 +1,6 @@
 ---
 layout: publications
-title: Publications
+title: 项目展示
 description: 
 keywords: 3D Increment Introduction
 comments: true

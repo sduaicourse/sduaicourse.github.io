@@ -29,16 +29,7 @@ navs:
   -
     href: /
     label: 课程首页
-
-  -
-    href: /member/
-    label: 往届成员
-    
-  -
-    href: /publications/
-    label: 项目展示
-
-  -
+ -
     href: /categories/
     label: 课程通知
 
@@ -46,6 +37,15 @@ navs:
     href: /wiki/
     label: 课程资源
 
+  -
+    href: /member/
+    label: 课程成员
+    
+  -
+    href: /publications/
+    label: 项目展示
+
+ 
 
 # ---------------- #
 #       RSS        #
