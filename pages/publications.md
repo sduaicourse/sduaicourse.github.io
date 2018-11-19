@@ -9,8 +9,6 @@ permalink: /publications/
 ---
 ## Highlights
 
-(完整列表详见 [below](#full-list) 或跳转至 [Google Scholar](https://scholar.google.ch/citations?user=TqxYWZsAAAAJ), [ResearcherID](https://www.researcherid.com/rid/D-7763-2012))
-
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
 
@@ -30,7 +28,7 @@ permalink: /publications/
 		
 			<p>{{ publi.description }}</p>
 			<p><em>{{ publi.authors }}</em></p>
-			<p><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
+			<p><strong><a href="{{ site.url }}{{ site.baseurl }}/member/{{ publi.link.member }}">{{ publi.link.display }}</a></strong></p>
 			<p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
 			<p> {{ publi.news2 }}</p>
 		</div>
@@ -52,17 +50,5 @@ permalink: /publications/
 {% if even_odd == 1 %}
 </div>
 {% endif %}
-
-<p> &nbsp; </p>
-
-
-## Full List
-
-{% for publi in site.data.publist %}
-
-  {{ publi.title }} <br />
-  <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
-
-{% endfor %}
 
 
