@@ -1,0 +1,127 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: https://sduaicourse.github.io
+date_format: "ordinal"
+title: SDU AICOURSE
+subtitle: "人工智能应用实践"
+description: "人工智能应用实践"
+keywords: AI, 人工智能, sdu, SDU, 山东大学
+#timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: 山东大学
+organization: 新工科示范课堂
+organization_url: https://sduaicourse.github.io
+github_username: sduaicourse
+location: Qingdao, China
+email: sduaicourse@163.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 课程首页
+
+  -
+    href: /member/
+    label: 往届成员
+    
+  -
+    href: /publications/
+    label: 项目展示
+
+  -
+    href: /categories/
+    label: 课程通知
+
+  -
+    href: /wiki/
+    label: 课程资源
+
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - bootstrap
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+               
+    member:
+        output: true
+        permalink: /member/:path/
+
+repository: sduaicourse/sduaicourse.github.io
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: 
+# https://imsun.net/posts/gitment-introduction/
+#gitment:
+#    owner: 3dincrement
+#    repo: 3dincrement.github.io
+#   oauth:
+#        client_id: 6aac903760c8b3b313e8
+#        client_secret: 0696db07ba2897d037fcac78c3575d317ce990c6
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: 3dincrement18
+    repo: team-chat
+    clientID: 36b92cb13f5af8892386
+    clientSecret: b6c8a835787656e41492826a847a70b408d40277
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : false
+
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # 是否支持全文搜索
+    fulltext: false
+    # 最多显示多少条搜索结果
+    limit: 10
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: UA-80669434-1

@@ -1,0 +1,101 @@
+- name: 闫鑫
+  photo: yanxinpic.JPG
+  info: 博士在读
+  email: io.yanxin@gmail.com
+  github: RingedNebulae
+  homepage: 
+  number_educ: 3
+  education1: 学士 2010-2014 山东大学 机械设计及其自动化
+  education2: 硕士 2014-2017 山东大学 机械电子工程 导师： <a href="http://www.mech.sdu.edu.cn/info/1127/121172.htm">张承瑞</a>
+  education3: 博士 2017-     山东大学 
+ 
+- name: 周宇
+  photo: zhouyu.jpg
+  info: 博士在读
+  email: zhouyu3026@gmail.com
+  github: zhouyu636493
+  homepage:
+  number_educ: 3
+  education1: 学士 2011-2015 东北大学 计算机科学与技术
+  education2: 硕士 2015-2018 东北大学 计算机应用技术 
+  education3: 博士 2018-     山东大学 
+
+- name: 刘霖
+  photo: LiuLin.jpg
+  info: 研究生在读
+  email: lorrain0407@gmail.com
+  github: lorrain0407
+  homepage:
+  number_educ: 2
+  education1: 学士 2012-2016 山东科技大学 数字媒体技术
+  education2: 研究生在读 2016-     山东大学 软件工程 
+
+- name: 刘晓康
+  photo: lxk.jpg
+  info: 研究生在读
+  email: lxk811@gmail.com
+  github: LLLiuxk 
+  homepage:
+  number_educ: 2
+  education1: 学士 2012-2016 郑州大学 计算机科学与技术
+  education2: 研究生在读 2016-     山东大学 计算机科学与技术
+ 
+- name: 杨静如
+  photo: jingru.png
+  info: 研究生在读
+  email: jingru.jem@gmail.com
+  github: JemRu
+  homepage:
+  number_educ: 2
+  education1: 学士 2013-2017 山东大学 计算机科学与技术
+  education2: 研究生在读 2017-     山东大学 计算机科学与技术 
+  
+- name: 徐凡
+  photo: xufan.jpg
+  info: 研究生在读
+  email: xufan.cs, irc@gmail.com
+  github: duoyikeladetang
+  homepage:
+  number_educ: 2
+  education1: 学士 2013-2017 山东大学 软件工程
+  education2: 研究生在读 2013-     山东大学 计算机科学与技术
+
+- name: 饶聪
+  photo: raocong.jpg
+  info: 研究生在读
+  email: raocong95@gmail.com
+  github: raocong95
+  homepage:
+  number_educ: 2
+  education1: 学士 2013-2017 山东大学 计算机科学与技术
+  education2: 研究生在读 2017-     山东大学 计算机科学与技术
+
+- name: 彭昊
+  photo: penghao.jpg
+  info: 研究生在读
+  email: ph1994wh@gmail.com
+  github: swannyPeng
+  homepage:
+  number_educ: 2
+  education1: 学士 2013-2017 山东大学 计算机科学与技术
+  education2: 研究生在读 2017-     山东大学 计算机科学与技术
+
+- name: 田李昊
+  photo: tlh.png
+  info: 本科在读
+  email: tianlihao0420@gmail.com
+  github: TianliHao
+  homepage:
+  number_educ: 2
+  education1: 学士 2014-2018 山东大学 泰山学堂
+  education2: 研究生在读 2018- 山东大学 计算机科学与技术
+
+- name: 陈明海
+  photo: cmh.jpeg
+  info: 本科在读
+  email: nevre0598@gmail.com
+  github: nevre
+  homepage:
+  number_educ: 2
+  education1: 学士 2014-2018 山东大学 数字媒体技术
+  education2: 研究生在读 2018-     山东大学 计算机科学与技术
