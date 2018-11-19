@@ -4,8 +4,8 @@
 baseurl:
 url: https://sduaicourse.github.io
 date_format: "ordinal"
-title: SDU AICOURSE
-subtitle: "人工智能应用实践"
+title: 人工智能应用实践
+subtitle: ""
 description: "人工智能应用实践"
 keywords: AI, 人工智能, sdu, SDU, 山东大学
 #timezone: Asia/Shanghai
@@ -19,7 +19,7 @@ author: 山东大学
 organization: 新工科示范课堂
 organization_url: https://sduaicourse.github.io
 github_username: sduaicourse
-location: Qingdao, China
+location: 山东大学，青岛
 email: sduaicourse@163.com
 
 # ---------------- #
