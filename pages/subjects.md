@@ -19,7 +19,7 @@ permalink: /subjects/
 
  <div class="thumbnail">
 		<div class="caption">
-				<h5>{{subject.title }}</h5>
+				<h4>{{subject.title }}</h4>
 		<img src="{{subject.image }}" class="img-responsive" witdh="20%"/>
 		<br>
 			<p>{{subject.description }}</p>
