@@ -8,7 +8,7 @@ permalink: /subjects/
 ---
 
 {% assign number_printed = 0 %}
-{% forsubject in site.subjects %}
+{% for subject in site.subjects %}
 {% assign even_odd = number_printed | modulo: 2 %}
 
 {% if even_odd == 0 %}
@@ -20,6 +20,7 @@ permalink: /subjects/
  <div class="thumbnail">
 		<div class="caption">
 				<h5>{{subject.title }}</h5>
+		<img src="{{ site.url }}{{ site.baseurl }}/images/subpic/{{subject.image }}" class="img-responsive" witdh="20%"/>
 		
 			<p>{{subject.description }}</p>
 			<p><strong><a href="{{ site.url }}{{ subject.url }}">详细信息</a></strong></p>
