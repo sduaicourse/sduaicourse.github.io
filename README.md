@@ -6,7 +6,6 @@ description: 主页、团队、成果维护指南
 keywords: Guide
 ---
 
-> 终于做的差不多了
 
 这次整理的主要是三部分 主页、团队、成果，这三部分都是用markdown维护的，只要修改对应markdown里面的内容就行
 
