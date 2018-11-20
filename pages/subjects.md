@@ -20,7 +20,7 @@ permalink: /subjects/
  <div class="thumbnail">
 		<div class="caption">
 				<h5>{{subject.title }}</h5>
-		<img src="{{ site.url }}{{ site.baseurl }}/images/subpic/{{subject.image }}" class="img-responsive" witdh="20%"/>
+		<img src="{{subject.image }}" class="img-responsive" witdh="20%"/>
 		<br>
 			<p>{{subject.description }}</p>
 			<p><strong><a href="{{ site.url }}{{ subject.url }}">详细信息</a></strong></p>
