@@ -4,7 +4,7 @@
 baseurl:
 url: https://sduaicourse.github.io
 date_format: "ordinal"
-title: 人工智能应用实践
+title: 人工智能应用实践课程
 subtitle: ""
 description: "人工智能应用实践"
 keywords: AI, 人工智能, sdu, SDU, 山东大学
@@ -35,16 +35,16 @@ navs:
     label: 课程通知
     
   -
-    href: /wiki/
-    label: 课程资源
-
-  -
-    href: /member/
-    label: 课程成员
+    href: /subjects/
+    label: 课题列表
 
   -
     href: /publications/
-    label: 项目成果
+    label: 课题成果
+
+  -
+    href: /wiki/
+    label: 课程资源
 
  
 

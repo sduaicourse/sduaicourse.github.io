@@ -7,7 +7,6 @@ comments: true
 menu: 成果
 permalink: /publications/
 ---
-## Highlights
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
@@ -50,5 +49,7 @@ permalink: /publications/
 {% if even_odd == 1 %}
 </div>
 {% endif %}
+<div class="row">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 

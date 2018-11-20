@@ -1,6 +1,0 @@
-- name: CGAL
-  url: https://www.cgal.org/
-
-- name: LIBIGL
-  url: https://github.com/libigl/libigl
-
