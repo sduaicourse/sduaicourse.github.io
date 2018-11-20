@@ -80,9 +80,9 @@ collections:
         output: true
         permalink: /wiki/:path/
                
-    member:
+    subjects:
         output: true
-        permalink: /member/:path/
+        permalink: /subjects/:path/
 
 repository: sduaicourse/sduaicourse.github.io
 
