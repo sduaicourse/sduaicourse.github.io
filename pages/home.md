@@ -13,6 +13,6 @@ permalink: /
 
 ### 山东大学计算机科学与技术学院2016级人工智能实验班
 
-<img src="https://i.loli.net/2018/11/21/5bf4dc1dd12c6.jpg" alt="2016_2.jpg" title="2016_2.jpg" />
+<img src="https://i.loli.net/2018/11/21/5bf4dd381c868.jpg" alt="2016_2.jpg" title="2016_2.jpg" />
 <br><br><br><br><br>
 
