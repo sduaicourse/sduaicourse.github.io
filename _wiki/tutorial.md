@@ -25,5 +25,5 @@ git add *
 git commit -m "upgrade subject lists"
 git push origin master
 ```
-然后会提示输入账号密码，账号：sduaicourse 密码：aicourse2018,
-即可完成对网页的修改
+然后会提示输入账号密码，账号：sduaicourse 密码：aicourse2018,即可完成对网页的修改
+如果遇到 git push 报错：remote: Permission to XXXA/xxxx.git denied to XXXB，可参考[教程](https://blog.csdn.net/u012832088/article/details/78928576)解决
