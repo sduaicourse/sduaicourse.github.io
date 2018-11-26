@@ -7,7 +7,7 @@ keywords:
 image: https://i.loli.net/2018/11/25/5bfa643c60cbd.png
 ---
 
-**尺度不变特征转换(Scale-invariant feature transform 或 SIFT)**
+#尺度不变特征转换(Scale-invariant feature transform 或 SIFT)
 	是一种机器视觉的算法用来侦测与描述影像中的局部性特征，它在空间尺度中寻找极值点，并提取出其位置、尺度、旋转不变数，此算法由 David Lowe 在1999年所发表，2004年完善总结。
 	后续的论文中也有许多基于 SIFT 改进的论文，例如 SURF 将 SIFT 的许多过程近似，达到加速的效果；PCA-SIFT利用主成分分析降低描述子的维度，减少内存的使用并加快配对速度。
 
@@ -21,12 +21,14 @@ image: https://i.loli.net/2018/11/25/5bfa643c60cbd.png
 
 SIFT 特征的信息量大，适合在大量数据库中快速准确匹配。
 
-<center>**物体匹配**
+<center>**物体匹配**</center>
+
 ![match1](https://i.loli.net/2018/11/26/5bfb4018a5dfd.png)
 
 
-<center> **全景拼接**
+<center> **全景拼接**</center>
 
 ![match2](https://i.loli.net/2018/11/26/5bfb4220eb0d2.jpg)
+
 
 ![match3](https://i.loli.net/2018/11/26/5bfb438767c28.jpg)
