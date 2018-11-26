@@ -40,7 +40,7 @@ image: https://i.loli.net/2018/11/26/5bfb586d14bcd.jpg
 ![二类熵交叉函数.jpg](https://i.loli.net/2018/11/26/5bfb5904bc684.jpg)
 
 ## 开源代码 ##
-[https://github.com/hexiangnan/neural_collaborative_filtering](https://github.com/hexiangnan/neural_collaborative_filtering )
+[neural_collaborative_filtering](https://github.com/hexiangnan/neural_collaborative_filtering)
 
 ## 参考文献 ##
 [推荐算法综述](http://ir.sdu.edu.cn/~zhuminchen/RS/yangbo2011.pdf)
