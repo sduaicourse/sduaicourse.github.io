@@ -22,11 +22,11 @@ image: https://i.loli.net/2018/11/25/5bfa643c60cbd.png
 SIFT 特征的信息量大，适合在大量数据库中快速准确匹配。
 
 <center>**物体匹配**
-![match](https://i.loli.net/2018/11/26/5bfb4018a5dfd.png)
+![match1](https://i.loli.net/2018/11/26/5bfb4018a5dfd.png)
 
 
 <center> **全景拼接**
 
-![match](https://i.loli.net/2018/11/26/5bfb4220eb0d2.jpg)
+![match2](https://i.loli.net/2018/11/26/5bfb4220eb0d2.jpg)
 
-![match](https://i.loli.net/2018/11/26/5bfb438767c28.jpg)
+![match3](https://i.loli.net/2018/11/26/5bfb438767c28.jpg)
