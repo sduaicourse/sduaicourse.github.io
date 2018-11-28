@@ -1,0 +1,8 @@
+---
+layout: wiki
+title: 基于机器学习方法的引力波信号检测
+categories: 
+description: 2015年9月,美国的先进激光干涉引力波天文台（aLIGO）直接探测到双黑洞并合发射的引力波，证实了爱因斯坦百年前的引力波预言。这一里程碑事件打开了利用引力波检验引力理论和探测宇宙及其中结构和天体形成演化的新窗口，开启了引力波天文学新纪元。但是在由于引力波信号强度极其微弱，无法直接探测得出一段信号是否属于引力波信号的范围。所以需要使用贝叶斯方法构建匹配滤波器来处理、检测有效信号，并输出最终引力波提取出来的数据
+keywords: 
+image: https://www.ligo.caltech.edu/system/slides/binaries/1/slide_large_image/DetectionSlide.jpg?1456255417
+---
