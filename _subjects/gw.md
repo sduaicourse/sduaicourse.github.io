@@ -26,9 +26,8 @@ LIGO官方给出了一系列教程，包括：python, jupyter notebook, signal p
 [Tutorials2](https://www.gw-openscience.org/static/workshop1/course.html)
 
 ## 参考论文
-Observation of Gravitational Waves from a Binary Black Hole Merger *B.P. Abbott et al.*
-
-Observing gravitational-wave transient GW150914 with minimal assumptions *B.P. Abbott et al.*
+Observation of Gravitational Waves from a Binary Black Hole Merger *B.P. Abbott et al.*    
+Observing gravitational-wave transient GW150914 with minimal assumptions *B.P. Abbott et al.*  
 
 ## 祝福
 天体物理深似海，学科交叉有奇象  
