@@ -19,8 +19,8 @@ image: https://www.ligo.caltech.edu/system/slides/binaries/1/slide_large_image/D
 
 ## 数据库
 ![GWOSC DATABASE](https://i.loli.net/2018/11/28/5bfe0ff1548b8.jpg)
-[GWOSC:https://www.gw-openscience.org/events/]
-(https://www.gw-openscience.org/events/)
+[GWOSC:https://www.gw-openscience.org/events]
+(https://www.gw-openscience.org/events)
 
 ## 官方教程
 LIGO官方给出了一系列教程，包括：python, jupyter notebook, signal processing and gravitational wave workshop tutorials
