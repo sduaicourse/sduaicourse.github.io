@@ -4,7 +4,7 @@ title: 基于单目图像的深度估计
 categories: 
 description: 此处应写对问题的简述
 keywords: 
-image: https://i.loli.net/2018/11/21/5bf456c8f4067.png
+image: https://pic4.zhimg.com/v2-f9f2a9b644a96f1b06ca5a1d081759c2_1200x500.jpg
 ---
 
 # 基于单目图像的深度估计
