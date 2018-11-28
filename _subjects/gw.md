@@ -13,18 +13,19 @@ image: https://www.ligo.caltech.edu/system/slides/binaries/1/slide_large_image/D
 ## 贝叶斯方法
 朴素贝叶斯分类器
 [Reference:https://arxiv.org/pdf/1508.02357.pdf]
-(https://arxiv.org/pdf/1508.02357.pdf)
+(https://arxiv.org/abs/1807.10312)
 [Reference:https://arxiv.org/pdf/1508.02357.pdf]
-(https://arxiv.org/pdf/1508.02357.pdf)
+(https://arxiv.org/abs/1508.02357)
 
 ## 数据库
 ![GWOSC DATABASE](https://i.loli.net/2018/11/28/5bfe0ff1548b8.jpg)
 [GWOSC:https://www.gw-openscience.org/events/]
+(https://www.gw-openscience.org/events/)
 
 ## 官方教程
 LIGO官方给出了一系列教程，包括：python, jupyter notebook, signal processing and gravitational wave workshop tutorials
 ![11.jpg](https://i.loli.net/2018/11/28/5bfe12902fc31.jpg)
-[Tutorials1](https://www.gw-openscience.org/tutorials/)
+[Tutorials1](https://www.gw-openscience.org/tutorials/)  
 [Tutorials2](https://www.gw-openscience.org/static/workshop1/course.html)
 
 ## 参考论文
