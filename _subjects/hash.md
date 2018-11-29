@@ -51,9 +51,9 @@ __三、课题主要内容__
 __四、主要参考文献资料__  
 [1] Qing-YuanJiang, Wu-JunLi. Deep Cross-Modal Hashing. arXiv:1602.02255.  
 [2] Devraj Mandal Kunal N. Chaudhury Soma Biswas. Generalized Semantic Preserving Hashing for n-Label Cross-Modal Retrieval. Indian Institute of Science, Bangalore – 560012  
-[3] DCH: http://cfm.uestc.edu.cn/~fshen/pub.html/  
-[4] SHDH: Supervised Deep Hashing for Hierarchical Labeled Data*  
-https://www.researchgate.net/publication/315835894_Supervised_Deep_Hashing_for_Hierarchical_Labeled_Data  
-DCMH参考代码：https://github.com/jiangqy/DCMHCVPR2017/tree/master/DCMH_tensorflow/DCMH_tensorflow  
-DCH参考代码:http://cfm.uestc.edu.cn/~fshen/pub.html(在该网页中找到2017年对应的论文)  
+[3] [DCH: ](http://cfm.uestc.edu.cn/~fshen/pub.html)  
+[4] [SHDH: Supervised Deep Hashing for Hierarchical Labeled Data*](https://www.researchgate.net/publication/315835894_Supervised_Deep_Hashing_for_Hierarchical_Labeled_Data)  
+[DCMH参考代码：](https://github.com/jiangqy/DCMHCVPR2017/tree/master/DCMH_tensorflow/DCMH_tensorflow)  
+[DCH参考代码:](http://cfm.uestc.edu.cn/~fshen/pub.html)(在该网页中找到2017年对应的论文)  
 
+[回到顶部](#readme)
