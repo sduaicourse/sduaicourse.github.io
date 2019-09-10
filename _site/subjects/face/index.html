@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>人脸检测 &mdash; 人工智能应用实践课程</title>
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-css/css/primer.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/collection.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/repo-card.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/mini-repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/boxed-group.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/common.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/share.js/dist/css/share.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/responsive.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/posts/index.css">
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified CSS -->
+    
+	
+
+    
+    <link rel="canonical" href="http://localhost:4000/subjects/face/">
+    <link rel="alternate" type="application/atom+xml" title="人工智能应用实践课程" href="http://localhost:4000/feed.xml">
+    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+    
+    <meta property="og:title" content="人脸检测">
+      
+    <meta name="keywords" content="AI, 人工智能, sdu, SDU, 山东大学">
+    <meta name="og:keywords" content="AI, 人工智能, sdu, SDU, 山东大学">
+      
+    <meta name="description" content="人脸检测算法">
+    <meta name="og:description" content="人脸检测算法">
+      
+    
+    
+        
+    
+    <meta property="og:url" content="http://localhost:4000/subjects/face/">
+    <meta property="og:site_name" content="人工智能应用实践课程">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <meta property="article:published_time" content="2019-09-10">
+    
+    <script src="http://localhost:4000/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost:4000/assets/js/jquery-ui.js"></script>
+	 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    function toggleMenu() {
+        var nav = document.getElementsByClassName("site-header-nav")[0];
+        if (nav.style.display == "inline-flex") {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "inline-flex";
+        }
+    }
+    </script>
+</head>
+<body class="" data-mz="">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="http://localhost:4000/" title="人工智能应用实践课程"><span class="octicon octicon-circuit-board"></span> 人工智能应用实践课程</a></h1>
+            <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <nav class="site-header-nav" role="navigation">
+                
+                <a href="http://localhost:4000/" class=" site-header-nav-item" target="" title="课程首页"><h4>课程首页</h4></a>
+                
+                <a href="http://localhost:4000/categories/" class=" site-header-nav-item" target="" title="课程通知"><h4>课程通知</h4></a>
+                
+                <a href="http://localhost:4000/subjects/" class=" site-header-nav-item" target="" title="课题列表"><h4>课题列表</h4></a>
+                
+                <a href="http://localhost:4000/publications/" class=" site-header-nav-item" target="" title="课题成果"><h4>课题成果</h4></a>
+                
+                <a href="http://localhost:4000/wiki/" class=" site-header-nav-item" target="" title="课程资源"><h4>课程资源</h4></a>
+                
+            </nav>
+        </div>
+    </header>
+    <!-- / header -->
+
+    <section class="collection-head small geopattern" data-pattern-id="人脸检测">
+<div class="container">
+  <div class="columns">
+    <div class="column three-fourths">
+      <div class="collection-title">
+        <h1 class="collection-header">人脸检测</h1>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- / .banner -->
+<section class="container content">
+    <article class="article-content markdown-body">
+    <h1 id="人脸检测算法">人脸检测算法</h1>
+
+<ul>
+  <li>人脸检测是机器视觉领域被深入研究的经典问题，在安防监控、人证比对、人机交互、社交等领域都有重要的应用价值。数码相机、智能手机等端上的设备已经大量使用人脸检测技术实现成像时对人脸的对焦、图集整理分类等功能，各种虚拟美颜相机也需要人脸检测技术定位人脸，然后才能根据人脸对齐的技术确定人脸皮肤、五官的范围然后进行美颜。在人脸识别的流程中，人脸检测是整个人脸识别算法的第一步。</li>
+</ul>
+
+<p><img src="https://i.loli.net/2019/09/10/cFmLgXDRiYfQMeh.png" alt="图片2.png" /></p>
+
+<h2 id="数据集">数据集</h2>
+
+<ul>
+  <li><strong>LFW</strong></li>
+</ul>
+
+<p>全名是Labeled Faces in the Wild.这个数据集是人脸评估一定会用到的一个数据集，包含了来自1680的13000张人脸图，数据是从网上搜索来的。基本都是正脸。这个数据集也是最简单的，基本主流算法都能跑到99%以上，貌似有6对label错了，所以最高正确率应该是99.9%左右。这个都跑不到99%的话别的数据集表现效果会更差。一般来说这个数据集是用来做人脸识别验证的。</p>
+
+<ul>
+  <li><strong>CelebFaces</strong></li>
+</ul>
+
+<p>总共包含10177个人的202599张图片，也是从搜索引擎上爬过来的,噪声不算多，适合作为训练集。同时这个数据对人脸有一些二元标签，比如是否微笑，是否戴帽子等。如果需要特定属性的人脸，也可以从中获取。</p>
+
+<ul>
+  <li><strong>CASIA-WebFace</strong></li>
+</ul>
+
+<p>该数据集是从IMBb网站上搜集来的，含10K个人的500K张图片。同时做了相似度聚类来去掉一部分噪声。CAISA-WebFace的数据集源和IMDb-Face是一样的，不过因为数据清洗的原因，会比IMDb-Face少一些图片。噪声不算特别多，适合作为训练数据。</p>
+
+<ul>
+  <li><strong>VGG-Face</strong></li>
+</ul>
+
+<p>来自2622个人的2百万张图片。每个人大概要2000+图片，跟MS-Celeb-1M有很多重叠的地方（因为都是从搜索引擎来的），这个数据集经常作为训练模型的数据，噪声比较小，相对来说能训练出比较好的结果。</p>
+
+<h2 id="实现方法">实现方法</h2>
+
+<h3 id="早期方法">早期方法</h3>
+
+<p>早期的人脸检测算法使用了模板匹配技术，即用一个人脸模板图像与被检测图像中的各个位置进行匹配，确定这个位置处是否有人脸；此后机器学习算法被用于该问题，包括神经网络，支持向量机等。以上都是针对图像中某个区域进行人脸-非人脸二分类的判别。</p>
+
+<h2 id="深度学习框架">深度学习框架</h2>
+
+<p>举例MTCNN</p>
+
+<p>MTCNN顾名思义是多任务的一个方法，它将人脸区域检测和人脸关键点检测放在了一起，同Cascade CNN一样也是基于cascade的框架，但是整体思路更加巧妙合理，MTCNN总体来说分为三个部分：PNet、RNet和ONet，如下图所示：</p>
+
+<p><img src="https://i.loli.net/2019/09/10/qbsAuUWRrZFB3vw.png" alt="TIM截图20190910193632.png" /></p>
+
+<p>MTCNN在测试第一阶段的PNet是全卷积网络（FCN），全卷积网络的优点在于可以输入任意尺寸的图像，同时使用卷积运算代替了滑动窗口运算，大幅提高了效率。</p>
+
+<p>除了增加人脸5个关键点的回归任务，另外在calibration阶段采用了直接回归真实位置坐标的偏移量的思路替代了Cascade CNN中的固定模式分类方式，整个思路更为合理。</p>
+
+<p><img src="https://i.loli.net/2019/09/10/VvL6WZRaXb4Ii7j.png" alt="TIM截图20190910193640.png" /></p>
+
+<p>MTCNN的整体设计思路很好，将人脸检测和人脸对齐集成到了一个框架中实现，另外整体的复杂度得到了很好的控制，可以在中端手机上跑20~30FPS。该方法目前在很多工业级场景中得到了应用。</p>
+
+<h2 id="开源代码">开源代码</h2>
+
+<p><a href="https://github.com/davidsandberg/facenet">Face recognition using Tensorflow</a></p>
+
+<p><a href="https://github.com/AITTSMD/MTCNN-Tensorflow">Reproduce MTCNN using Tensorflow</a></p>
+
+<p><a href="https://github.com/cmusatyalab/openface">OpenFace</a></p>
+
+<h2 id="参考文献">参考文献</h2>
+
+<p><a href="https://arxiv.org/abs/1809.02693v1">Improved Selective Refinement Network for Face Detection</a></p>
+
+<p><a href="https://arxiv.org/abs/1604.02878">Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks</a></p>
+
+<p><a href="https://arxiv.org/abs/1503.03832">FaceNet: A Unified Embedding for Face Recognition and Clustering</a></p>
+
+    </article>
+    <div class="share">
+      <div class="share-component"></div>
+    </div>
+    <div class="comment">
+      
+
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/subjects/face/',
+            clientID: '36b92cb13f5af8892386',
+            clientSecret: 'b6c8a835787656e41492826a847a70b408d40277',
+            repo: 'team-chat',
+            owner: '3dincrement18',
+            admin: ['3dincrement18'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+    </div>
+
+</section>
+<!-- /section.content -->
+
+    <footer class="container">
+        <div class="site-footer" role="contentinfo">
+            <div class="copyright left mobile-block">
+                    © 2018
+                    <span title="山东大学">山东大学</span>
+                    <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+            </div>
+
+            <ul class="site-footer-links right mobile-hidden">
+                <li>
+                    <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+                </li>
+            </ul>
+            <a href="https://github.com/sduaicourse/sduaicourse.github.io" target="_blank" aria-label="view source code">
+                <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+            </a>
+            <ul class="site-footer-links mobile-hidden">
+                
+                <li>
+                    <a href="http://localhost:4000/" title="课程首页" target="">课程首页</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/categories/" title="课程通知" target="">课程通知</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/subjects/" title="课题列表" target="">课题列表</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/publications/" title="课题成果" target="">课题成果</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/wiki/" title="课程资源" target="">课程资源</a>
+                </li>
+                
+                <li><a href="http://localhost:4000/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- / footer -->
+    <script src="http://localhost:4000/assets/vendor/share.js/dist/js/share.min.js"></script>
+    <script src="http://localhost:4000/assets/js/geopattern.js"></script>
+    <script src="http://localhost:4000/assets/js/prism.js"></script>
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/prism.css">
+    <script>
+      jQuery(document).ready(function($) {
+        // geopattern
+        $('.geopattern').each(function(){
+          $(this).geopattern($(this).data('pattern-id'));
+        });
+       // hljs.initHighlightingOnLoad();
+      });
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div style="display:none">
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-80669434-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+    </div>
+    
+</body>
+</html>

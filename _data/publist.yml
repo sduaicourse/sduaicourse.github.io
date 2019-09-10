@@ -1,17 +1,26 @@
 - title: "Printed Perforated Lampshades for Continuous Projective Images"
   image: lamp.png
-  description:  ""
+  description:  "图形学"
   authors: Haisen Zhao, Lin Lu*, Yuan Wei, Dani Lischinski, Andrei Sharf, Daniel Cohen-Or, Baoquan Chen
   link:
-    member: "赵文慧"
+    url: http://irc.cs.sdu.edu.cn/Lampshades/
     display: ACM Transactions on Graphics (TOG), 2016
   highlight: 1
 
 - title: "Dapper: Decompose-and-Pack for 3D Printing"
   image: dap.png
-  description: ""
+  description: "3d打印方向"
   authors: MXuelin Chen, Hao Zhang, Jinjie Lin, Ruizhen Hu, Lin Lu, Qixing Huang, Bedrich Benes, Daniel Cohen-Or, Baoquan Chen
   link:
-    member: "武昱"
+    url: http://irc.cs.sdu.edu.cn/DAP/Dapper.html
     display: ACM Transactions on Graphics (TOG) - Proceedings of ACM SIGGRAPH Asia 2015, Volume 34 Issue 6, October 2015
+  highlight: 1
+
+- title: "PointCNN: Convolution On X-Transformed Points"
+  image: pointcnn.png
+  description: "视觉强作-阿里巴巴-山东大学2018"
+  authors: Yangyan Li, Rui Bu, Mingchao Sun, Wei Wu, Xinhan Di, Baoquan Chen
+  link:
+    url: https://arxiv.org/abs/1801.07791
+    display: NIPS,2018
   highlight: 1

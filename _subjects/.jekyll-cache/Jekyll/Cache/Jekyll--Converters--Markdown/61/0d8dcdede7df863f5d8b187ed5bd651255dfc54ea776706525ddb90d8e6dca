@@ -1,0 +1,29 @@
+I"�<h1 id="基于机器学习方法的引力波信号检测">基于机器学习方法的引力波信号检测</h1>
+<h2 id="背景简介">背景简介</h2>
+<p>2015年9月,美国的先进激光干涉引力波天文台（aLIGO）直接探测到双黑洞并合发射的引力波，证实了爱因斯坦百年前的引力波预言。这一里程碑事件打开了利用引力波检验引力理论和探测宇宙及其中结构和天体形成演化的新窗口，开启了引力波天文学新纪元。但是在由于引力波信号强度极其微弱，无法直接探测得出一段信号是否属于引力波信号的范围。所以需要使用贝叶斯方法构建匹配滤波器来处理、检测有效信号，并输出最终引力波提取出来的数据。</p>
+
+<h2 id="贝叶斯方法">贝叶斯方法</h2>
+<p>朴素贝叶斯分类器<br />
+<a href="https://arxiv.org/abs/1807.10312">Reference:https://arxiv.org/pdf/1508.02357.pdf</a><br />
+<a href="https://arxiv.org/abs/1508.02357">Reference:https://arxiv.org/pdf/1508.02357.pdf</a></p>
+
+<h2 id="数据库">数据库</h2>
+<p><img src="https://i.loli.net/2018/11/28/5bfe0ff1548b8.jpg" alt="GWOSC DATABASE" />
+<a href="https://www.gw-openscience.org/events">GWOSC:https://www.gw-openscience.org/events</a></p>
+
+<h2 id="官方教程">官方教程</h2>
+<p>LIGO官方给出了一系列教程，包括：python, jupyter notebook, signal processing and gravitational wave workshop tutorials
+<img src="https://i.loli.net/2018/11/28/5bfe12902fc31.jpg" alt="11.jpg" />
+<a href="https://www.gw-openscience.org/tutorials/">Tutorials1</a><br />
+<a href="https://www.gw-openscience.org/static/workshop1/course.html">Tutorials2</a></p>
+
+<h2 id="参考论文">参考论文</h2>
+<p>Observation of Gravitational Waves from a Binary Black Hole Merger <em>B.P. Abbott et al.</em>  <br />
+Observing gravitational-wave transient GW150914 with minimal assumptions <em>B.P. Abbott et al.</em></p>
+
+<h2 id="祝福">祝福</h2>
+<p>天体物理深似海，学科交叉有奇象<br />
+引力波的证实开启了宇宙学和整个物理学的新大门<br />
+我们可以用全新的更大的眼界来看世界了<br />
+祝福大家能发现更多_(┐ ◟ᐕ)¬_</p>
+:ET

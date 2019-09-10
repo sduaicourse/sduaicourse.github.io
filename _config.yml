@@ -27,24 +27,24 @@ email: sduaicourse@163.com
 # ---------------- #
 navs:
   -
-    href: /
-    label: 课程首页
+​    href: /
+​    label: 课程首页
 
   -
-    href: /categories/
-    label: 课程通知
-    
-  -
-    href: /subjects/
-    label: 课题列表
+​    href: /categories/
+​    label: 课程通知    
 
   -
-    href: /publications/
-    label: 课题成果
+​    href: /subjects/
+​    label: 课题列表
 
   -
-    href: /wiki/
-    label: 课程资源
+​    href: /publications/
+​    label: 课题成果
+
+  -
+​    href: /wiki/
+​    label: 课程资源
 
  
 
@@ -58,7 +58,7 @@ subscribe_rss: /feed.xml
 # ---------------- #
 markdown: kramdown
 kramdown:
-    input: GFM
+​    input: GFM
 highlighter: rouge
 paginate: 8
 lsi: false
@@ -66,9 +66,9 @@ quiet: false
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
 gems:
-    - bootstrap
-    - jekyll-github-metadata
-    - rouge
+​    - bootstrap
+​    - jekyll-github-metadata
+​    - rouge
 #     - jekyll-html-pipeline
     - jekyll-paginate
     - jekyll-sitemap
@@ -76,10 +76,10 @@ gems:
     - jemoji
 #     - jekyll-mentions
 collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
-               
+​    wiki:
+​        output: true
+​        permalink: /wiki/:path/
+​               
     subjects:
         output: true
         permalink: /subjects/:path/
@@ -95,7 +95,7 @@ comments_provider: gitalk
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: 
+​    username: 
 # https://imsun.net/posts/gitment-introduction/
 #gitment:
 #    owner: 3dincrement
@@ -105,10 +105,10 @@ disqus:
 #        client_secret: 0696db07ba2897d037fcac78c3575d317ce990c6
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: 3dincrement18
-    repo: team-chat
-    clientID: 36b92cb13f5af8892386
-    clientSecret: b6c8a835787656e41492826a847a70b408d40277
+​    owner: 3dincrement18
+​    repo: team-chat
+​    clientID: 36b92cb13f5af8892386
+​    clientSecret: b6c8a835787656e41492826a847a70b408d40277
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
@@ -116,13 +116,13 @@ lazy_load_disqus : false
 #      Search      #
 # ---------------- #
 simple_jekyll_search:
-    # 是否支持全文搜索
-    fulltext: false
-    # 最多显示多少条搜索结果
-    limit: 10
+​    # 是否支持全文搜索
+​    fulltext: false
+​    # 最多显示多少条搜索结果
+​    limit: 10
 
 # ---------------- #
 #    Analytics     #
 # ---------------- #
 google:
-    analytics_id: UA-80669434-1
+​    analytics_id: UA-80669434-1

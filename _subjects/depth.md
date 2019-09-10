@@ -2,7 +2,7 @@
 layout: wiki
 title: 基于单目图像的深度估计
 categories: 
-description: 此处应写对问题的简述
+description: 实现对于给定单张图像的深度估计，单目？双目？传统？一键带你体验全套算法
 keywords: 
 image: https://pic4.zhimg.com/v2-f9f2a9b644a96f1b06ca5a1d081759c2_1200x500.jpg
 ---
@@ -23,6 +23,7 @@ Maked3D数据集由斯坦福大学的Saxena等人构建,使用包含激光扫描
 
 * KITTI数据集
   
+
 KITTI数据集是由德国卡尔斯鲁厄理工学院和美国丰田技术研究院联合建立,主要用于立体视觉,光流,视觉测距等视觉任务,该数据集基于自动驾驶平台Annieway开发,其中的激光扫描仪的最大测量距离是120m,在深度估计任务中,该数据集中能够提供93000对RGB图像和深度图像.
 
 * NYU depth-V2数据集

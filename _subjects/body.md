@@ -2,7 +2,7 @@
 layout: wiki
 title: 基于单幅图像的三维人体姿态估计
 categories: 
-description: 
+description: 实现基于单张图片的人体姿态估计，开启你的CV之旅，体感游戏的未来就靠你了
 keywords: 
 image: https://i.loli.net/2018/12/24/5c20dc4f1f81e.png
 ---

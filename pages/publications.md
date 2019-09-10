@@ -24,15 +24,14 @@ permalink: /publications/
 		<div class="caption">
 				<h5>{{ publi.title }}</h5>
 		<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" witdh="20%"/>
-		
+
 			<p>{{ publi.description }}</p>
 			<p><em>{{ publi.authors }}</em></p>
-			<p><strong><a href="{{ site.url }}{{ site.baseurl }}/member/{{ publi.link.member }}">{{ publi.link.display }}</a></strong></p>
+			<p><strong><a href="{{ publi.link.url}}">{{ publi.link.display }}</a></strong></p>
 			<p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
 			<p> {{ publi.news2 }}</p>
 		</div>
-    </div>
- 
+	</div>
 
 </div>
 
