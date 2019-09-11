@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>基于深度学习的纹理合成 &mdash; 人工智能应用实践课程</title>
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-css/css/primer.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/collection.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/repo-card.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/mini-repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/boxed-group.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/common.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/share.js/dist/css/share.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/responsive.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/posts/index.css">
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified CSS -->
+    
+	
+
+    
+    <link rel="canonical" href="http://localhost:4000/publications/texture/">
+    <link rel="alternate" type="application/atom+xml" title="人工智能应用实践课程" href="http://localhost:4000/feed.xml">
+    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+    
+    <meta property="og:title" content="基于深度学习的纹理合成">
+      
+    <meta name="keywords" content="AI, 人工智能, sdu, SDU, 山东大学">
+    <meta name="og:keywords" content="AI, 人工智能, sdu, SDU, 山东大学">
+      
+    <meta name="description" content="纹理合成纹理合成是为了解决纹理映射中存在的接缝走样等问题而提出的，目前纹理合成方法可分为两类：一类为过程纹理合成(PTS)，另一类为基于样图的纹理合成（TSFS）。  过程纹理合成通过对物理生成过程的仿真直接在曲面上生成纹理，如毛发、云雾、木纹等，从而避免了纹理映射带来的失真。这种方法可以获得非常逼真的纹理，但对每一种新的纹理，却需要调整参数反复测试，非常不便，有的甚至无法得到有效的参数。  自然界中存在大量的纹理，这些纹理往往具有自相似性，即一小块纹理就能反映整体纹理的特点。这就促使人们着手研究基于样图的纹理合成方法以取得更有效的成果：给定一小块纹理，生成大块相似的纹理。基于深度学习的纹理合成现实世界中展示了大量非静态纹理，其具有大规模结构的纹理，以及空间变化和均匀纹理。  我们的方法使用生成对抗网络（GAN），训练使从特定纹理样本中提取的纹理块的空间范围加倍。 一旦经过训练，完全卷积发生器就能够扩展整个样本及其任何子块的大小。 我们证明了这种概念上简单的方法对于捕获大规模结构以及输入范例的其他非固定属性非常有效。 因此，它可以应对具有挑战性的纹理。">
+    <meta name="og:description" content="纹理合成纹理合成是为了解决纹理映射中存在的接缝走样等问题而提出的，目前纹理合成方法可分为两类：一类为过程纹理合成(PTS)，另一类为基于样图的纹理合成（TSFS）。  过程纹理合成通过对物理生成过程的仿真直接在曲面上生成纹理，如毛发、云雾、木纹等，从而避免了纹理映射带来的失真。这种方法可以获得非常逼真的纹理，但对每一种新的纹理，却需要调整参数反复测试，非常不便，有的甚至无法得到有效的参数。  自然界中存在大量的纹理，这些纹理往往具有自相似性，即一小块纹理就能反映整体纹理的特点。这就促使人们着手研究基于样图的纹理合成方法以取得更有效的成果：给定一小块纹理，生成大块相似的纹理。基于深度学习的纹理合成现实世界中展示了大量非静态纹理，其具有大规模结构的纹理，以及空间变化和均匀纹理。  我们的方法使用生成对抗网络（GAN），训练使从特定纹理样本中提取的纹理块的空间范围加倍。 一旦经过训练，完全卷积发生器就能够扩展整个样本及其任何子块的大小。 我们证明了这种概念上简单的方法对于捕获大规模结构以及输入范例的其他非固定属性非常有效。 因此，它可以应对具有挑战性的纹理。">
+      
+    
+    
+        
+    
+    <meta property="og:url" content="http://localhost:4000/publications/texture/">
+    <meta property="og:site_name" content="人工智能应用实践课程">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <meta property="article:published_time" content="2019-09-11">
+    
+    <script src="http://localhost:4000/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost:4000/assets/js/jquery-ui.js"></script>
+	 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    function toggleMenu() {
+        var nav = document.getElementsByClassName("site-header-nav")[0];
+        if (nav.style.display == "inline-flex") {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "inline-flex";
+        }
+    }
+    </script>
+</head>
+<body class="" data-mz="">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="http://localhost:4000/" title="人工智能应用实践课程"><span class="octicon octicon-circuit-board"></span> 人工智能应用实践课程</a></h1>
+            <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <nav class="site-header-nav" role="navigation">
+                
+                <a href="http://localhost:4000/" class=" site-header-nav-item" target="" title="课程首页"><h4>课程首页</h4></a>
+                
+                <a href="http://localhost:4000/categories/" class=" site-header-nav-item" target="" title="课程通知"><h4>课程通知</h4></a>
+                
+                <a href="http://localhost:4000/subjects/" class=" site-header-nav-item" target="" title="课题列表"><h4>课题列表</h4></a>
+                
+                <a href="http://localhost:4000/publications/" class=" site-header-nav-item" target="" title="项目展示"><h4>项目展示</h4></a>
+                
+                <a href="http://localhost:4000/wiki/" class=" site-header-nav-item" target="" title="课程资源"><h4>课程资源</h4></a>
+                
+            </nav>
+        </div>
+    </header>
+    <!-- / header -->
+
+    <section class="collection-head small geopattern" data-pattern-id="基于深度学习的纹理合成">
+<div class="container">
+  <div class="columns">
+    <div class="column three-fourths">
+      <div class="collection-title">
+        <h1 class="collection-header">基于深度学习的纹理合成</h1>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- / .banner -->
+<section class="container content">
+    <article class="article-content markdown-body">
+    <h1 id="纹理合成">纹理合成</h1>
+<p>纹理合成是为了解决纹理映射中存在的接缝走样等问题而提出的，目前纹理合成方法可分为两类：一类为过程纹理合成(PTS)，另一类为基于样图的纹理合成（TSFS）。  <br />
+过程纹理合成通过对物理生成过程的仿真直接在曲面上生成纹理，如毛发、云雾、木纹等，从而避免了纹理映射带来的失真。这种方法可以获得非常逼真的纹理，但对每一种新的纹理，却需要调整参数反复测试，非常不便，有的甚至无法得到有效的参数。  <br />
+自然界中存在大量的纹理，这些纹理往往具有自相似性，即一小块纹理就能反映整体纹理的特点。这就促使人们着手研究基于样图的纹理合成方法以取得更有效的成果：给定一小块纹理，生成大块相似的纹理。</p>
+<h1 id="基于深度学习的纹理合成">基于深度学习的纹理合成</h1>
+<p>现实世界中展示了大量非静态纹理，其具有大规模结构的纹理，以及空间变化和均匀纹理。  <br />
+我们的方法使用生成对抗网络（GAN），训练使从特定纹理样本中提取的纹理块的空间范围加倍。 一旦经过训练，完全卷积发生器就能够扩展整个样本及其任何子块的大小。 我们证明了这种概念上简单的方法对于捕获大规模结构以及输入范例的其他非固定属性非常有效。 因此，它可以应对具有挑战性的纹理。
+<img src="http://vcc.szu.edu.cn/upload/image/20180424/20180424131242_252.jpg" alt="" /></p>
+
+<h1 id="要点">要点</h1>
+<ol>
+  <li>非平稳性纹理包括大规模不规则结构的纹理，或者是在颜色、局部方向和比例的某些属性中呈现空间变化的纹理；</li>
+  <li>基于实例的纹理合成的目的是生成纹理，捕获样本的视觉特征并保持逼真的外观；</li>
+  <li>使用生成对口网络来将小纹理扩展为类似于原始样本的较大纹理。
+    <h1 id="相关内容">相关内容</h1>
+    <p><a href="http://kns.cnki.net/KCMS/detail">http://kns.cnki.net/KCMS/detail</a> <br />
+<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=5565210">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=5565210</a>  <br />
+<a href="http://dx.doi.org/10.1145/3015461">http://dx.doi.org/10.1145/3015461</a>  <br />
+<a href="http://vcc.szu.edu.cn/research/2018/TexSyn">http://vcc.szu.edu.cn/research/2018/TexSyn</a></p>
+  </li>
+</ol>
+
+    </article>
+    <div class="share">
+      <div class="share-component"></div>
+    </div>
+    <div class="comment">
+      
+
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/publications/texture/',
+            clientID: '36b92cb13f5af8892386',
+            clientSecret: 'b6c8a835787656e41492826a847a70b408d40277',
+            repo: 'team-chat',
+            owner: '3dincrement18',
+            admin: ['3dincrement18'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+    </div>
+
+</section>
+<!-- /section.content -->
+
+    <footer class="container">
+        <div class="site-footer" role="contentinfo">
+            <div class="copyright left mobile-block">
+                    © 2018
+                    <span title="山东大学">山东大学</span>
+                    <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+            </div>
+
+            <ul class="site-footer-links right mobile-hidden">
+                <li>
+                    <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+                </li>
+            </ul>
+            <a href="https://github.com/sduaicourse/sduaicourse.github.io" target="_blank" aria-label="view source code">
+                <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+            </a>
+            <ul class="site-footer-links mobile-hidden">
+                
+                <li>
+                    <a href="http://localhost:4000/" title="课程首页" target="">课程首页</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/categories/" title="课程通知" target="">课程通知</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/subjects/" title="课题列表" target="">课题列表</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/publications/" title="项目展示" target="">项目展示</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/wiki/" title="课程资源" target="">课程资源</a>
+                </li>
+                
+                <li><a href="http://localhost:4000/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- / footer -->
+    <script src="http://localhost:4000/assets/vendor/share.js/dist/js/share.min.js"></script>
+    <script src="http://localhost:4000/assets/js/geopattern.js"></script>
+    <script src="http://localhost:4000/assets/js/prism.js"></script>
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/prism.css">
+    <script>
+      jQuery(document).ready(function($) {
+        // geopattern
+        $('.geopattern').each(function(){
+          $(this).geopattern($(this).data('pattern-id'));
+        });
+       // hljs.initHighlightingOnLoad();
+      });
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div style="display:none">
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-80669434-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+    </div>
+    
+</body>
+</html>

@@ -40,7 +40,7 @@ navs:
 
   -
     href: /publications/
-    label: 课题成果
+    label: 项目展示
 
   -
     href: /wiki/
@@ -83,6 +83,10 @@ collections:
     subjects:
         output: true
         permalink: /subjects/:path/
+               
+    publications:
+        output: true
+        permalink: /publications/:path/
 
 repository: sduaicourse/sduaicourse.github.io
 

@@ -427,6 +427,76 @@
       "category" : "",
       
       "url"      : "http://localhost:4000"
+    } ,
+  
+    {
+      "title"    : "基于单幅图像的三维人体姿态估计",
+      "category" : "",
+      
+      "url"      : "http://localhost:4000/publications/body/"
+    } ,
+  
+    {
+      "title"    : "端到端的对话系统",
+      "category" : "",
+      
+      "url"      : "http://localhost:4000/publications/chat/"
+    } ,
+  
+    {
+      "title"    : "基于深度学习的个性化服装搭配",
+      "category" : "",
+      
+      "url"      : "http://localhost:4000/publications/clothes/"
+    } ,
+  
+    {
+      "title"    : "基于单目图像的深度估计",
+      "category" : "",
+      
+      "url"      : "http://localhost:4000/publications/depth/"
+    } ,
+  
+    {
+      "title"    : "基于机器学习方法的引力波信号检测",
+      "category" : "",
+      
+      "url"      : "http://localhost:4000/publications/gw/"
+    } ,
+  
+    {
+      "title"    : "深度跨模态哈希检索",
+      "category" : "多媒体检索",
+      
+      "url"      : "http://localhost:4000/publications/hash/"
+    } ,
+  
+    {
+      "title"    : "基于局部特征的图像检索",
+      "category" : "",
+      
+      "url"      : "http://localhost:4000/publications/image/"
+    } ,
+  
+    {
+      "title"    : "基于深度学习的音乐推荐系统",
+      "category" : "",
+      
+      "url"      : "http://localhost:4000/publications/music/"
+    } ,
+  
+    {
+      "title"    : "基于深度学习的真实感渲染",
+      "category" : "",
+      
+      "url"      : "http://localhost:4000/publications/real/"
+    } ,
+  
+    {
+      "title"    : "基于深度学习的纹理合成",
+      "category" : "",
+      
+      "url"      : "http://localhost:4000/publications/texture/"
     } 
   
 ]

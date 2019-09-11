@@ -1,18 +1,15 @@
 ---
 layout: publications
 title: 项目展示
-description: 
-keywords: 3D Increment Introduction
-comments: true
-menu: 成果
+description: 历年项目成果
+keywords: project
+comments: false
 permalink: /publications/
 ---
 
 {% assign number_printed = 0 %}
-{% for publi in site.data.publist %}
-
+{% for publi in site.publications %}
 {% assign even_odd = number_printed | modulo: 2 %}
-{% if publi.highlight == 1 %}
 
 {% if even_odd == 0 %}
 <div class="row">
@@ -22,16 +19,14 @@ permalink: /publications/
 
  <div class="thumbnail">
 		<div class="caption">
-				<h5>{{ publi.title }}</h5>
-		<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" witdh="20%"/>
-
-			<p>{{ publi.description }}</p>
-			<p><em>{{ publi.authors }}</em></p>
-			<p><strong><a href="{{ publi.link.url}}">{{ publi.link.display }}</a></strong></p>
-			<p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
-			<p> {{ publi.news2 }}</p>
+				<h4>{{publi.title }}</h4>
+		<img src="{{publi.image }}" class="img-responsive" witdh="20%"/>
+		<br>
+			<p>{{publi.description }}</p>
+			<p><strong><a href="{{ site.url }}{{ publi.url }}">详细信息</a></strong></p>
 		</div>
-	</div>
+    </div>
+ 
 
 </div>
 
@@ -39,8 +34,6 @@ permalink: /publications/
 
 {% if even_odd == 1 %}
 </div>
-{% endif %}
-
 {% endif %}
 {% endfor %}
 
@@ -50,5 +43,4 @@ permalink: /publications/
 {% endif %}
 <div class="row">
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 

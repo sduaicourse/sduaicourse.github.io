@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>基于机器学习方法的引力波信号检测 &mdash; 人工智能应用实践课程</title>
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-css/css/primer.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/collection.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/repo-card.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/mini-repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/boxed-group.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/common.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/share.js/dist/css/share.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/responsive.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/posts/index.css">
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified CSS -->
+    
+	
+
+    
+    <link rel="canonical" href="http://localhost:4000/publications/gw/">
+    <link rel="alternate" type="application/atom+xml" title="人工智能应用实践课程" href="http://localhost:4000/feed.xml">
+    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+    
+    <meta property="og:title" content="基于机器学习方法的引力波信号检测">
+      
+    <meta name="keywords" content="AI, 人工智能, sdu, SDU, 山东大学">
+    <meta name="og:keywords" content="AI, 人工智能, sdu, SDU, 山东大学">
+      
+    <meta name="description" content="基于机器学习方法的引力波信号检测背景简介2015年9月,美国的先进激光干涉引力波天文台（aLIGO）直接探测到双黑洞并合发射的引力波，证实了爱因斯坦百年前的引力波预言。这一里程碑事件打开了利用引力波检验引力理论和探测宇宙及其中结构和天体形成演化的新窗口，开启了引力波天文学新纪元。但是在由于引力波信号强度极其微弱，无法直接探测得出一段信号是否属于引力波信号的范围。所以需要使用贝叶斯方法构建匹配滤波器来处理、检测有效信号，并输出最终引力波提取出来的数据。">
+    <meta name="og:description" content="基于机器学习方法的引力波信号检测背景简介2015年9月,美国的先进激光干涉引力波天文台（aLIGO）直接探测到双黑洞并合发射的引力波，证实了爱因斯坦百年前的引力波预言。这一里程碑事件打开了利用引力波检验引力理论和探测宇宙及其中结构和天体形成演化的新窗口，开启了引力波天文学新纪元。但是在由于引力波信号强度极其微弱，无法直接探测得出一段信号是否属于引力波信号的范围。所以需要使用贝叶斯方法构建匹配滤波器来处理、检测有效信号，并输出最终引力波提取出来的数据。">
+      
+    
+    
+        
+    
+    <meta property="og:url" content="http://localhost:4000/publications/gw/">
+    <meta property="og:site_name" content="人工智能应用实践课程">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <meta property="article:published_time" content="2019-09-11">
+    
+    <script src="http://localhost:4000/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost:4000/assets/js/jquery-ui.js"></script>
+	 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    function toggleMenu() {
+        var nav = document.getElementsByClassName("site-header-nav")[0];
+        if (nav.style.display == "inline-flex") {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "inline-flex";
+        }
+    }
+    </script>
+</head>
+<body class="" data-mz="">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="http://localhost:4000/" title="人工智能应用实践课程"><span class="octicon octicon-circuit-board"></span> 人工智能应用实践课程</a></h1>
+            <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <nav class="site-header-nav" role="navigation">
+                
+                <a href="http://localhost:4000/" class=" site-header-nav-item" target="" title="课程首页"><h4>课程首页</h4></a>
+                
+                <a href="http://localhost:4000/categories/" class=" site-header-nav-item" target="" title="课程通知"><h4>课程通知</h4></a>
+                
+                <a href="http://localhost:4000/subjects/" class=" site-header-nav-item" target="" title="课题列表"><h4>课题列表</h4></a>
+                
+                <a href="http://localhost:4000/publications/" class=" site-header-nav-item" target="" title="项目展示"><h4>项目展示</h4></a>
+                
+                <a href="http://localhost:4000/wiki/" class=" site-header-nav-item" target="" title="课程资源"><h4>课程资源</h4></a>
+                
+            </nav>
+        </div>
+    </header>
+    <!-- / header -->
+
+    <section class="collection-head small geopattern" data-pattern-id="基于机器学习方法的引力波信号检">
+<div class="container">
+  <div class="columns">
+    <div class="column three-fourths">
+      <div class="collection-title">
+        <h1 class="collection-header">基于机器学习方法的引力波信号检测</h1>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- / .banner -->
+<section class="container content">
+    <article class="article-content markdown-body">
+    <h1 id="基于机器学习方法的引力波信号检测">基于机器学习方法的引力波信号检测</h1>
+<h2 id="背景简介">背景简介</h2>
+<p>2015年9月,美国的先进激光干涉引力波天文台（aLIGO）直接探测到双黑洞并合发射的引力波，证实了爱因斯坦百年前的引力波预言。这一里程碑事件打开了利用引力波检验引力理论和探测宇宙及其中结构和天体形成演化的新窗口，开启了引力波天文学新纪元。但是在由于引力波信号强度极其微弱，无法直接探测得出一段信号是否属于引力波信号的范围。所以需要使用贝叶斯方法构建匹配滤波器来处理、检测有效信号，并输出最终引力波提取出来的数据。</p>
+
+<h2 id="贝叶斯方法">贝叶斯方法</h2>
+<p>朴素贝叶斯分类器<br />
+<a href="https://arxiv.org/abs/1807.10312">Reference:https://arxiv.org/pdf/1508.02357.pdf</a><br />
+<a href="https://arxiv.org/abs/1508.02357">Reference:https://arxiv.org/pdf/1508.02357.pdf</a></p>
+
+<h2 id="数据库">数据库</h2>
+<p><img src="https://i.loli.net/2018/11/28/5bfe0ff1548b8.jpg" alt="GWOSC DATABASE" />
+<a href="https://www.gw-openscience.org/events">GWOSC:https://www.gw-openscience.org/events</a></p>
+
+<h2 id="官方教程">官方教程</h2>
+<p>LIGO官方给出了一系列教程，包括：python, jupyter notebook, signal processing and gravitational wave workshop tutorials
+<img src="https://i.loli.net/2018/11/28/5bfe12902fc31.jpg" alt="11.jpg" />
+<a href="https://www.gw-openscience.org/tutorials/">Tutorials1</a><br />
+<a href="https://www.gw-openscience.org/static/workshop1/course.html">Tutorials2</a></p>
+
+<h2 id="参考论文">参考论文</h2>
+<p>Observation of Gravitational Waves from a Binary Black Hole Merger <em>B.P. Abbott et al.</em>  <br />
+Observing gravitational-wave transient GW150914 with minimal assumptions <em>B.P. Abbott et al.</em></p>
+
+<h2 id="祝福">祝福</h2>
+<p>天体物理深似海，学科交叉有奇象<br />
+引力波的证实开启了宇宙学和整个物理学的新大门<br />
+我们可以用全新的更大的眼界来看世界了<br />
+祝福大家能发现更多_(┐ ◟ᐕ)¬_</p>
+
+    </article>
+    <div class="share">
+      <div class="share-component"></div>
+    </div>
+    <div class="comment">
+      
+
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/publications/gw/',
+            clientID: '36b92cb13f5af8892386',
+            clientSecret: 'b6c8a835787656e41492826a847a70b408d40277',
+            repo: 'team-chat',
+            owner: '3dincrement18',
+            admin: ['3dincrement18'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+    </div>
+
+</section>
+<!-- /section.content -->
+
+    <footer class="container">
+        <div class="site-footer" role="contentinfo">
+            <div class="copyright left mobile-block">
+                    © 2018
+                    <span title="山东大学">山东大学</span>
+                    <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+            </div>
+
+            <ul class="site-footer-links right mobile-hidden">
+                <li>
+                    <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+                </li>
+            </ul>
+            <a href="https://github.com/sduaicourse/sduaicourse.github.io" target="_blank" aria-label="view source code">
+                <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+            </a>
+            <ul class="site-footer-links mobile-hidden">
+                
+                <li>
+                    <a href="http://localhost:4000/" title="课程首页" target="">课程首页</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/categories/" title="课程通知" target="">课程通知</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/subjects/" title="课题列表" target="">课题列表</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/publications/" title="项目展示" target="">项目展示</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/wiki/" title="课程资源" target="">课程资源</a>
+                </li>
+                
+                <li><a href="http://localhost:4000/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- / footer -->
+    <script src="http://localhost:4000/assets/vendor/share.js/dist/js/share.min.js"></script>
+    <script src="http://localhost:4000/assets/js/geopattern.js"></script>
+    <script src="http://localhost:4000/assets/js/prism.js"></script>
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/prism.css">
+    <script>
+      jQuery(document).ready(function($) {
+        // geopattern
+        $('.geopattern').each(function(){
+          $(this).geopattern($(this).data('pattern-id'));
+        });
+       // hljs.initHighlightingOnLoad();
+      });
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div style="display:none">
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-80669434-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+    </div>
+    
+</body>
+</html>
